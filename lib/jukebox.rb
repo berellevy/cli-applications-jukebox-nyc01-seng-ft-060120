@@ -52,3 +52,24 @@ def exit_jukebox
 
   puts "Goodbye"
 end
+
+
+def run(songs_array)
+  while true do
+    puts "Please enter a command:"
+    response = gets.chomp
+    case response
+    when "exit"
+      exit_jukebox
+      break
+    when "help"
+      help
+    when "play"
+      play(songs_array)
+    when "list"
+      list songs_array
+    end
+  end
+
+
+end)
