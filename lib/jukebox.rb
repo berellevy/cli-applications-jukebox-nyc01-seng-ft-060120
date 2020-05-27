@@ -55,8 +55,8 @@ end
 
 
 def run(songs_array)
+  puts "Please enter a command:"
   while true do
-    puts "Please enter a command:"
     response = gets.chomp
     case response
     when "exit"
