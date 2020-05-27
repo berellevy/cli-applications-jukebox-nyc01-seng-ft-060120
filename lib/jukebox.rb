@@ -29,7 +29,7 @@ def play(songs_array)
   response = gets.strip
   # binding.pry
   if response.to_i > 0 && songs_array[response.to_i-1]
-    puts "Playing #{songs_array[response.to_i-1]}
+    puts "Playing #{songs_array[response.to_i-1]}"
   elsif songs_array.any?(response)
     puts response
   else
